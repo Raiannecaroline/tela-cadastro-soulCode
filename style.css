@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  background-image: linear-gradient(90deg, #ed73f1fd, #92a0f1, #f5bdf0, #96d7f1);
+  background-size: 300% 300%; 
+  animation: colors 15s ease infinite; 
+}
+
+.form {
+  background: white;
+  width: 300px;
+  max-width: 1094px;
+  margin: 30px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  padding: 10px 20px 10px 20px;
+}
+
+.form input {
+  font-family: 'Roboto', sans-serif;
+  width: 250px;
+  border: 1px solid black;
+  border-collapse: colapse;
+  margin: 4px;
+  padding: 10px;
+  font-size: 16px;
+
+}
+.form #username {
+  background-color: #c4c4c4;
+}
+
+#name, #senha, #e-mail, #cpf{
+  background-color: #f2f2f2;
+}
+
+.form button {
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  background-color: #7b4ae4;
+  width: 272px;
+  border: 1px solid black;
+  padding: 10px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+@keyframes colors{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
